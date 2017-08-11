@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/app.css';
+import Grid from './Grid';
+import lists from '../data/list.json';
 
 class App extends Component {
   render() {
@@ -9,6 +11,7 @@ class App extends Component {
           <p>Your List</p>
           <div className="app-avatar"></div>
         </div>
+        <Grid />
       </div>
     );
   }
