@@ -4,7 +4,7 @@
 }
 
 .app-heading {
-	margin: 30px 20px 30px 20px;
+	margin: 50px 20px 20px 20px;
 	display: flex;
 	flex-diraction: row;
 	justify-content: space-between;
@@ -13,7 +13,7 @@
 
 .app-heading p {
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 40px;
 }
 
 .app-heading div {

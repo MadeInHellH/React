@@ -11,7 +11,7 @@ class App extends Component {
           <p>Your List</p>
           <div className="app-avatar"></div>
         </div>
-        <Grid />
+        <Grid lists={lists}/>
       </div>
     );
   }

@@ -1,29 +1,27 @@
-{
-	"list" : [
-		{
-			"title" : "Buy iMac",
-			"day" : "2017-08-20T00:00:00.511Z",
-			"completed" : false
-		},
-		{
-			"title" : "Buy iPad",
-			"day" : "2017-08-22T00:00:00.511Z",
-			"completed" : false
-		},
-		{
-			"title" : "Invoice Apple",
-			"day" : "2017-08-24T00:00:00.511Z",
-			"completed" : false
-		},
-		{
-			"title" : "Call accountant",
-			"day" : "2017-08-26T00:00:00.511Z",
-			"completed" : false
-		},
-		{
-			"title" : "Book tickets to Austria",
-			"day" : "2017-08-28T00:00:00.511Z",
-			"completed" : false
-		}
-	]
-}
+[
+	{
+		"title" : "Buy iMac",
+		"day" : "2017-08-20T00:00:00.511Z",
+		"completed" : false
+	},
+	{
+		"title" : "Buy iPad",
+		"day" : "2017-08-22T00:00:00.511Z",
+		"completed" : true
+	},
+	{
+		"title" : "Invoice Apple",
+		"day" : "2017-08-24T00:00:00.511Z",
+		"completed" : false
+	},
+	{
+		"title" : "Call accountant",
+		"day" : "2017-08-26T00:00:00.511Z",
+		"completed" : true
+	},
+	{
+		"title" : "Book tickets to Austria",
+		"day" : "2017-08-28T00:00:00.511Z",
+		"completed" : false
+	}
+]
