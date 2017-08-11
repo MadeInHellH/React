@@ -1,24 +1,26 @@
 .App {
-  text-align: center;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-heading {
+	margin: 30px 20px 0px 20px;
+	display: flex;
+	flex-diraction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App-heading p {
+	font-weight: 700;
+	font-size: 36px;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-heading div {
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+	margin-top: 3px;
+	background-color: #F8F8F8;
+	display: none;
 }
