@@ -1,9 +1,9 @@
-.App {
+.app {
   text-align: left;
   font-family: -apple-system, BlinkMacSystemFont, Roboto;
 }
 
-.App-heading {
+.app-heading {
 	margin: 30px 20px 0px 20px;
 	display: flex;
 	flex-diraction: row;
@@ -11,12 +11,12 @@
 	align-items: center;
 }
 
-.App-heading p {
+.app-heading p {
 	font-weight: 700;
 	font-size: 36px;
 }
 
-.App-heading div {
+.app-heading div {
 	width: 36px;
 	height: 36px;
 	border-radius: 18px;
