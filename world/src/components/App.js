@@ -5,15 +5,21 @@ import lists from '../data/list.json';
 
 class App extends Component {
   render() {
+    this.reorder();
     return (
        <div className="app">
         <div className="app-heading">
-          <p>Your List</p>
-          <div className="app-avatar"></div>
+          <p>Today</p>
         </div>
-        <Grid lists={lists}/>
+        <Grid lists={this.reorder()}/>
       </div>
     );
+  }
+  
+  reorder() {
+    return lists.sort(function(first, second) {
+      return first.completed == second.completed ? 0 : first.completed ? 1 : -1;
+    });
   }
 }
 
