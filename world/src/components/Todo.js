@@ -8,14 +8,16 @@ class Todo extends Component {
   	  	
     return (
       <div className="todo">
-    	  <div className={todo} onClick={this.pressed.bind()}></div>
+    	  <div className={todo} onClick={this.box.bind(this)}></div>
       	<p className={title}>{this.props.todo.title}</p>
       </div>
     );
   }
   
-  pressed() {
-    
+  box() {
+    this.props.todo.completed = !this.props.todo.completed;
+    this.setState(this.props);
+    this.props.update();
   }
 }
 
