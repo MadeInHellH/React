@@ -42,10 +42,12 @@ class Grid extends Component {
 			node.style.transform = 'translate(0px, ' + delta + 'px)';
       node.style.transition = 'transform 0s';
 	    
-	    requestAnimationFrame(function() {
-        node.style.transform  = '';
-        node.style.transition = 'transform 0.5s ease';
-      });
+			setTimeout(function() {
+				requestAnimationFrame(function() {
+        	node.style.transform  = '';
+        	node.style.transition = 'transform 0.4s ease';
+      	});
+			}, 400);
   	});
   }
   

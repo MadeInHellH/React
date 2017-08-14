@@ -14,7 +14,7 @@ class App extends Component {
     return (
        <div className="app">
         <div className="app-heading">
-          <p>Today</p>
+          <p>Goals</p>
         </div>
         <Grid lists={this.reorder()} update={this.update.bind(this)} />
       </div>
@@ -28,10 +28,7 @@ class App extends Component {
   }
   
   update() {
-    const self = this;
-    setTimeout(function() {
-      self.setState(self.lists);
-    }, 200);
+    this.setState(this.lists);
   }
 }
 

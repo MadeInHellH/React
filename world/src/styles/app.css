@@ -4,7 +4,7 @@
 }
 
 .app-heading {
-	margin: 50px 20px 20px 20px;
+	margin: 75px 100px 20px 100px;
 	display: flex;
 	flex-diraction: row;
 	justify-content: space-between;
@@ -23,4 +23,10 @@
 	margin-top: 3px;
 	background-color: #F8F8F8;
 	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-heading {
+  	margin: 55px 10% 15px 10%
+  }
 }

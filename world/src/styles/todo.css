@@ -1,4 +1,4 @@
-.todo {
+.todo {]
 	width: 100%;
 	height: 60px;
 	border-bottom: 1px solid white;
@@ -9,9 +9,14 @@
 	transition: all 0.5s ease;
 }
 
-.todo p {
+.todo input {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 	font-weight: 400;
 	font-size: 20px;
+  transition: color 0.5s ease;
 }
 
 .todo div {
