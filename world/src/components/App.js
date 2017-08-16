@@ -16,7 +16,7 @@ class App extends Component {
         <div className="app-heading">
           <p>Goals</p>
         </div>
-        <Grid lists={this.reorder()} update={this.update.bind(this)} />
+        <Grid lists={this.reorder()} update={this.update.bind(this)} create={this.create.bind(this)} remove={this.remove.bind(this)} />
       </div>
     );
   }
@@ -28,6 +28,37 @@ class App extends Component {
   }
   
   update() {
+    this.setState(this.lists);
+  }
+  
+  create(title) {
+    var id = 0;
+    
+    this.lists.map(function(todo) {
+      if (todo.id >= id) {
+        id = todo.id + 1;
+      }
+    });
+    
+    this.lists[this.lists.length] = {
+      "title" : title,
+      "id" : id,
+      "completed" : false
+    };
+    
+    this.setState(this.lists);
+  }
+  
+  remove(title) {
+    var place = 0;
+    this.lists.map(function(todo, index) {
+      if (todo.id === title) {
+        place = index;
+        return;
+      }
+    });
+    
+    this.lists.splice(place, 1);
     this.setState(this.lists);
   }
 }

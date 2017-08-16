@@ -1,11 +1,11 @@
 .grid {
-  margin-right: 100px;
-  margin-left: 100px;
+  padding-right: 50px;
+  padding-left: 80px;
 }
 
 @media only screen and (max-width: 600px) {
   .grid {
-    margin-right: 10%;
-    margin-left: 10%;
+    padding-right: 6%;
+    padding-left: 11%;
   }
 }

@@ -9,8 +9,11 @@ class Todo extends Component {
   	  	
     return (
       <div ref={"element" + this.props.todo.id} className="todo">
-    	  <div className={todo} onClick={this.box.bind(this)}></div>
-        <input type="text" value={this.props.todo.title} className={title} id={"input" + this.props.todo.id} onChange={this.text.bind(this)} />
+        <div className="container">
+      	  <div className={todo} onClick={this.box.bind(this)}></div>
+          <input type="text" value={this.props.todo.title} className={title} id={"input" + this.props.todo.id} onChange={this.text.bind(this)} />
+        </div>
+        <div className="remove" onClick={this.remove.bind(this)}></div>
       </div>
     );
   }
@@ -23,6 +26,10 @@ class Todo extends Component {
   text(event) {    
     this.props.todo.title = event.target.value;
     this.props.update()
+  }
+  
+  remove(event) {
+    this.props.remove(this.props.todo.id);
   }
 }
 

@@ -1,15 +1,23 @@
-.todo {]
-	width: 100%;
+.todo {
 	height: 60px;
+	background-color: white;
 	border-bottom: 1px solid white;
 	display: flex;
 	flex-diraction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	transition: all 0.5s ease;
 }
 
-.todo input {
+.todo .container {
+  height: 100%;
+	display: flex;
+	flex-diraction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.todo .container input {
   border: none;
   margin: 0;
   padding: 0;
@@ -19,33 +27,46 @@
   transition: color 0.5s ease;
 }
 
-.todo div {
+.todo .container div {
   width: 14px;
   height: 14px;
-  background-color: white;
   border-radius: 6px;
-  border: 1.5px solid white;
+  margin-right: 20px;
+  margin-top: 1px;
+  z-index: 1;
   position: relative;
-  margin-top: 2px;
-  margin-right: 17px;
+  border-radius: 4px;
 }
 
-.todo div:before {
+.todo .container  div:after {
   content: '';
-  position: absolute;
-  background-color: #44C1FF;
-  z-index: -1;
+  z-index: 0;
   top: -3px;
   right: -3px;
   bottom: -3px;
   left: -3px;
+  position: absolute;
+  background-color: transparent;
 	border-radius: 7px;
+  border: 2px solid #44C1FF;
 }
 
-.todo .todo-completed {
+.todo .container  .todo-completed:after {
   background-color: #44C1FF;
 }
 
-.todo .title-completed {
-  color: gray;
+.todo .container  .todo-completed {
+  background-color: #44C1FF;
+}
+
+.todo .container  .title-completed {
+  opacity: 0.3;
+}
+
+.todo .remove {
+  width: 4px;
+  height: 4px;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-color: lightgray;
 }
